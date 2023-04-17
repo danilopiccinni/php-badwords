@@ -7,6 +7,9 @@
     <title>Censura</title>
 </head>
 <body>
+    <h1>Risultato</h1>
+
+    <h2>Testo originale</h2>
     <?php 
 
     $paragrafo = $_GET['paragrafo'];
@@ -15,9 +18,9 @@
     ?>
 
     <p><?php echo $paragrafo ?></p>
-    <span>composto da: <?php echo strlen($paragrafo)?> caratteri</span>
+    <span>Composto da: <?php echo strlen($paragrafo)?> caratteri.</span>
     <br>
-    <span>composto da: <?php echo str_word_count($paragrafo) ?></span>
+    <span>Composto da: <?php echo str_word_count($paragrafo) ?> parole.</span>
 
     <hr>
 
@@ -27,9 +30,11 @@
     
     ?>
 
+    <h2>Testo censurato</h2>
+
     <p><?php echo $paragrafoCensurato ?></p>
-    <span>composto da: <?php echo strlen($paragrafoCensurato)?> caratteri</span>
+    <span>Composto da: <?php echo strlen($paragrafoCensurato)?> caratteri.</span>
     <br>
-    <span>composto da: <?php echo str_word_count($paragrafoCensurato) ?></span>
+    <span>Composto da: <?php echo str_word_count($paragrafoCensurato) ?> parole.</span>
 </body>
 </html>

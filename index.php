@@ -7,11 +7,24 @@
     <title>Badwords</title>
 </head>
 <body>
-    <form action="censura.php" method="GET">
-        <input type="text" placeholder="inserisci il testo" name="paragrafo">
-        <input type="text" placeholder="inserisci la parola da censurare" name="parola">
-        <button type="submit">Censura</button>
+    <h1>Censuriamo un testo</h1>
 
+    <form action="censura.php" method="GET">
+        <textarea name="paragrafo" id="" cols="30" rows="10" placeholder="inserisci il testo"></textarea>
+        <input type="text" placeholder="parola da censurare" name="parola">
+        <button type="submit">Censura</button>
     </form>
+
 </body>
 </html>
+
+<style>
+
+    form {
+        display: flex;
+        align-items : center;
+        gap: 50px;
+    }
+
+</style>
+
